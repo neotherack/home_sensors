@@ -24,9 +24,9 @@ while True:
 
     gauge_dht22_temp.set(dht22_temp)
     gauge_dht22_humidity.set(dht22_humidity)
-    gauge_bmp180_temp.set(bmp180_temp)
-    gauge_bmp180_pressure.set(bmp180_pressure/100)
-    gauge_tmp180_altitude.set(bmp180_altitude)
+    gauge_bmp180_temp.set(bmp180_temp + 1.4)
+    gauge_bmp180_pressure.set((bmp180_pressure/100)+87)
+    gauge_bmp180_altitude.set(bmp180_altitude)
 
     print(f"{dht22_temp} C (DHT22) | {bmp180_temp} C (BMP180) {dht22_humidity}% humidity (DHT22) @ {bmp180_pressure/100} mbar (BMP180)  altitude {bmp180_altitude} m (BMP180)")
 
