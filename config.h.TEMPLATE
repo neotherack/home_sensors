@@ -1,0 +1,6 @@
+#define WIFI_SSID "wifi_name"
+#define WIFI_PASS "wifi_pass"
+#define PORT 8000
+
+#define PRESSURE_FIX 87
+#define TEMPERATURE_FIX 1
