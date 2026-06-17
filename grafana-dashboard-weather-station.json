@@ -418,6 +418,33 @@
                 }
               }
             ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "air-stddev"
+            },
+            "properties": [
+              {
+                "id": "custom.axisPlacement",
+                "value": "right"
+              },
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "purple",
+                  "mode": "fixed"
+                }
+              },
+              {
+                "id": "custom.lineWidth",
+                "value": 1
+              },
+              {
+                "id": "custom.fillOpacity",
+                "value": 20
+              }
+            ]
           }
         ]
       },
@@ -997,6 +1024,6 @@
   "timezone": "browser",
   "title": "Weather station",
   "uid": "fed3axdlgibr4a",
-  "version": 96,
+  "version": 97,
   "weekStart": "monday"
 }
