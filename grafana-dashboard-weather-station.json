@@ -464,11 +464,24 @@
             "uid": "e16ee77d-9943-4a9c-9470-43063c8ba323"
           },
           "editorMode": "code",
-          "expr": "avg_over_time(ppm[6h])",
+          "expr": "avg_over_time(ppm[1h])",
           "instant": false,
-          "legendFormat": "ppm-6h",
+          "legendFormat": "air-1h",
           "range": true,
           "refId": "C"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "e16ee77d-9943-4a9c-9470-43063c8ba323"
+          },
+          "editorMode": "code",
+          "expr": "stddev_over_time(ppm[1h])",
+          "hide": false,
+          "instant": false,
+          "legendFormat": "air-stddev",
+          "range": true,
+          "refId": "D"
         }
       ],
       "title": "Air - Gases",
@@ -984,6 +997,6 @@
   "timezone": "browser",
   "title": "Weather station",
   "uid": "fed3axdlgibr4a",
-  "version": 95,
+  "version": 96,
   "weekStart": "monday"
 }
