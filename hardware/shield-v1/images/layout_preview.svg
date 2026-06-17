@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 320" font-family="monospace">
+  <style>
+    text { font-family: monospace; font-size: 11px; }
+    .small { font-size: 9px; }
+    .title { font-size: 14px; font-weight: bold; }
+  </style>
+
+  <!-- Background -->
+  <rect x="10" y="10" width="580" height="300" fill="#1a1a2e" rx="8"/>
+
+  <!-- Title -->
+  <text x="30" y="35" class="title" fill="#e94560">Home Sensors Shield v1</text>
+
+  <!-- ESP32 outline (bottom) -->
+  <rect x="120" y="240" width="360" height="60" rx="4" fill="#2d2d5e" stroke="#4e4e8e" stroke-width="1"/>
+  <text x="280" y="275" fill="#8888bb" class="small">ESP32 DevKit V1 (30 pin)</text>
+
+  <!-- Shield PCB -->
+  <rect x="115" y="50" width="370" height="170" rx="4" fill="#1e3a2e" stroke="#2eaa6e" stroke-width="1.5"/>
+  <text x="280" y="72" fill="#2eaa6e" class="small">SHIELD PCB (2 capas, 55x28mm)</text>
+
+  <!-- AHT20 -->
+  <rect x="150" y="85" width="70" height="40" rx="3" fill="#3a5a8e" stroke="#88bbee" stroke-width="1"/>
+  <text x="165" y="105" fill="#fff">AHT20</text>
+  <text x="165" y="118" fill="#aaccff" class="small">T+H (±0.3°C)</text>
+
+  <!-- BMP280 -->
+  <rect x="150" y="140" width="70" height="40" rx="3" fill="#3a5a8e" stroke="#88bbee" stroke-width="1"/>
+  <text x="165" y="160" fill="#fff">BMP280</text>
+  <text x="165" y="173" fill="#aaccff" class="small">Presión</text>
+
+  <!-- I2C bus line -->
+  <line x1="225" y1="105" x2="260" y2="105" stroke="#ee8844" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <line x1="225" y1="160" x2="260" y2="160" stroke="#ee8844" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <line x1="260" y1="105" x2="260" y2="160" stroke="#ee8844" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <text x="235" y="130" fill="#ee8844" class="small">I2C</text>
+
+  <!-- Pull-ups -->
+  <rect x="270" y="85" width="40" height="20" rx="3" fill="#5a5a3e" stroke="#cccc44" stroke-width="1"/>
+  <text x="275" y="98" fill="#ff0" class="small">4.7kΩ</text>
+  <rect x="270" y="140" width="40" height="20" rx="3" fill="#5a5a3e" stroke="#cccc44" stroke-width="1"/>
+  <text x="275" y="153" fill="#ff0" class="small">4.7kΩ</text>
+
+  <!-- Capacitor -->
+  <rect x="330" y="85" width="30" height="18" rx="3" fill="#5a3e3e" stroke="#ee6666" stroke-width="1"/>
+  <text x="333" y="97" fill="#faa" class="small">100n</text>
+
+  <!-- MQ-135 (piggyback) - shown floating above -->
+  <rect x="340" y="45" width="130" height="70" rx="4" fill="none" stroke="#aa66ee" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <rect x="345" y="50" width="120" height="40" rx="3" fill="#5a2d6e" stroke="#cc88ff" stroke-width="1"/>
+  <text x="360" y="70" fill="#ddaaff">MQ-135 (gas)</text>
+  <text x="360" y="83" fill="#ccaaff" class="small">piggyback ⬆ nivel 3</text>
+
+  <!-- MQ-135 header pins -->
+  <rect x="380" y="115" width="40" height="12" rx="2" fill="#2d2d5e" stroke="#4e4e8e" stroke-width="1"/>
+  <text x="385" y="124" fill="#888" class="small">1×4 HDR</text>
+
+  <!-- ADC line -->
+  <line x1="400" y1="115" x2="450" y2="200" stroke="#ee6666" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <text x="405" y="155" fill="#ee6666" class="small">ADC (GPIO36)</text>
+
+  <!-- J1 header -->
+  <rect x="450" y="85" width="30" height="80" rx="3" fill="#2d2d5e" stroke="#4e4e8e" stroke-width="1"/>
+  <text x="453" y="102" fill="#888" class="small">J1</text>
+  <text x="453" y="115" fill="#888" class="small">HDR</text>
+  <text x="453" y="128" fill="#888" class="small">2×15</text>
+
+  <!-- 3V3 label -->
+  <text x="130" y="195" fill="#44ee44" class="small">3.3V ──── VCC todos los chips</text>
+  <text x="130" y="208" fill="#ee4444" class="small">GND ──── Plano de masa capa inferior</text>
+
+  <!-- Instructions -->
+  <text x="30" y="310" fill="#666">Nivel 1: ESP32 | Nivel 2: Shield (AHT20+BMP280) | Nivel 3: MQ-135 piggyback</text>
+</svg>
