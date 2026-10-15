@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="620" viewBox="0 0 900 620" font-family="monospace">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="20" y="34" font-size="18" font-weight="bold">HAT v2 - esquema de bloques (D1 mini <-> conectores)</text>
+<rect x="360" y="250" width="180" height="120" rx="6" fill="#dfe8ff" stroke="#334" stroke-width="1.5"/>
+<text x="450.0" y="270" font-size="13" font-weight="bold" text-anchor="middle">Wemos D1 mini</text>
+<text x="450.0" y="288" font-size="11" text-anchor="middle" fill="#333">ESP8266 3.3V</text>
+<text x="450.0" y="302" font-size="11" text-anchor="middle" fill="#333">D1=SCL D2=SDA</text>
+<text x="450.0" y="316" font-size="11" text-anchor="middle" fill="#333">D5=DHT D6=HEAT</text>
+<text x="450.0" y="330" font-size="11" text-anchor="middle" fill="#333">A0=sense D0-RST</text>
+<rect x="30" y="90" width="180" height="80" rx="6" fill="#e8f7e8" stroke="#334" stroke-width="1.5"/>
+<text x="120.0" y="110" font-size="13" font-weight="bold" text-anchor="middle">J1 I2C-A (JST-XH)</text>
+<text x="120.0" y="128" font-size="11" text-anchor="middle" fill="#333">GND 3V3 SDA SCL</text>
+<rect x="690" y="90" width="180" height="80" rx="6" fill="#e8f7e8" stroke="#334" stroke-width="1.5"/>
+<text x="780.0" y="110" font-size="13" font-weight="bold" text-anchor="middle">J2 I2C-B (JST-XH)</text>
+<text x="780.0" y="128" font-size="11" text-anchor="middle" fill="#333">GND 3V3 SDA SCL</text>
+<rect x="30" y="250" width="180" height="80" rx="6" fill="#f7e8e8" stroke="#334" stroke-width="1.5"/>
+<text x="120.0" y="270" font-size="13" font-weight="bold" text-anchor="middle">J3 DHT22</text>
+<text x="120.0" y="288" font-size="11" text-anchor="middle" fill="#333">3V3 DATA GND</text>
+<rect x="690" y="250" width="180" height="80" rx="6" fill="#f7f0e0" stroke="#334" stroke-width="1.5"/>
+<text x="780.0" y="270" font-size="13" font-weight="bold" text-anchor="middle">J4 GAS / AOUT</text>
+<text x="780.0" y="288" font-size="11" text-anchor="middle" fill="#333">5V GND AOUT HEAT</text>
+<rect x="30" y="430" width="180" height="80" rx="6" fill="#f0e8f7" stroke="#334" stroke-width="1.5"/>
+<text x="120.0" y="450" font-size="13" font-weight="bold" text-anchor="middle">J5 BATERIA</text>
+<text x="120.0" y="468" font-size="11" text-anchor="middle" fill="#333">B+ B-</text>
+<rect x="360" y="430" width="180" height="80" rx="6" fill="#f0e8f7" stroke="#334" stroke-width="1.5"/>
+<text x="450.0" y="450" font-size="13" font-weight="bold" text-anchor="middle">J6 TP4056 (modulo)</text>
+<text x="450.0" y="468" font-size="11" text-anchor="middle" fill="#333">IN+ IN- B+ B-</text>
+<rect x="690" y="430" width="180" height="80" rx="6" fill="#eee" stroke="#334" stroke-width="1.5"/>
+<text x="780.0" y="450" font-size="13" font-weight="bold" text-anchor="middle">Alimentacion</text>
+<text x="780.0" y="468" font-size="11" text-anchor="middle" fill="#333">3V3 / 5V / VBAT</text>
+<text x="450" y="530" font-size="11" text-anchor="middle" fill="#555">R1/R2 pull-up I2C 10k -> 3V3 ; R3 pull-up DHT 10k ; R4 100k medida bateria (A0)</text>
+<text x="450" y="546" font-size="11" text-anchor="middle" fill="#555">D1..D4 TVS ESD a GND ; Q1+R7 driver del heater (D6) ; R5/R6 divisor gas -> A0</text>
+<line x1="210" y1="130" x2="360" y2="270" stroke="#4363d8" stroke-width="2"/>
+<text x="285.0" y="196.0" font-size="10" text-anchor="middle" fill="#4363d8">SDA/SCL</text>
+<line x1="690" y1="130" x2="540" y2="270" stroke="#4363d8" stroke-width="2"/>
+<text x="615.0" y="196.0" font-size="10" text-anchor="middle" fill="#4363d8">SDA/SCL</text>
+<line x1="210" y1="290" x2="360" y2="290" stroke="#4363d8" stroke-width="2"/>
+<text x="285.0" y="286.0" font-size="10" text-anchor="middle" fill="#4363d8">DHT</text>
+<line x1="690" y1="290" x2="540" y2="290" stroke="#4363d8" stroke-width="2"/>
+<text x="615.0" y="286.0" font-size="10" text-anchor="middle" fill="#4363d8">A0/HEAT</text>
+<line x1="210" y1="470" x2="360" y2="470" stroke="#4363d8" stroke-width="2"/>
+<text x="285.0" y="466.0" font-size="10" text-anchor="middle" fill="#4363d8">VBAT</text>
+<line x1="540" y1="470" x2="690" y2="470" stroke="#4363d8" stroke-width="2"/>
+<text x="615.0" y="466.0" font-size="10" text-anchor="middle" fill="#4363d8">5V/GND</text>
+<line x1="450" y1="370" x2="450" y2="430" stroke="#f58231" stroke-width="2"/>
+<text x="450.0" y="396.0" font-size="10" text-anchor="middle" fill="#f58231">IN+/B+</text>
+<text x="20" y="600" font-size="11" fill="#555">Borrador v2.0 - esquema ilustrativo, no sustituye al .kicad_sch. Ver README.md.</text>
+</svg>
